@@ -11,7 +11,7 @@
       <a>Soeur de la charité </a>
     </div>
     <div class="tile is-child box">
-      <p class="title">Contact</p>
+      <p class="title"><a href="/contact">Contact</a></p>
     </div>
   </div>
   
@@ -20,15 +20,15 @@
       <p class="title">Nous aider</p>
     </div>
     <div class="tile is-child box">
-      <p class="title">Projet</p>
+      <p class="title"><a href="projet">Projet</a></p>
     </div>
     <div class="tile is-child box">
-      <p class="title">Itinéraire</p>
+      <p class="title"><a href="itineraire">Itinéraire</a></p>
     </div>
   </div>
  <div class="tile is-parent">
     <div class="tile is-child box">
-      <p class="title">Carnet de voyage</p>
+      <p class="title"><a href="carnet">Carnet de voyage</a></p>
     </div>
   </div>
 </div>
