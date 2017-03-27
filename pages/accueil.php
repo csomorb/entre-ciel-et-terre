@@ -6,9 +6,9 @@
     </div>
     <div class="tile is-child box">
       <p class="title">Nous nous engageaons auprès de</p>
-      <a href="/esperance-banlieu">Espérance banlieu </a> <br/>
-      <a href="/fraternite-en-irak">Fraternité en Iraq </a> <br/>
-      <a href="/soeur-de-la-charite">Soeur de la charité </a>
+      <a href="esperancebanlieu">Espérance banlieu </a> <br/>
+      <a href="fraterniteenirak">Fraternité en Irak </a> <br/>
+      <a href="soeurdelacharite">Soeur de la charité </a>
     </div>
     <div class="tile is-child box">
       <p class="title"><a href="/contact">Contact</a></p>
@@ -39,68 +39,78 @@
 
 
 <div id="carousel">
-  <div class="btn-bar">
-    <div id="buttons"><a id="prev" href="#"><</a><a id="next" href="#">></a> </div>
-  </div>
-  <div id="slides">
+    <div id="slides">
     <ul>
       <li class="slide">
         <div class="quoteContainer">
-          <p class="quote-phrase"><span class="quote-marks">"</span> I was literally BLOWN AWAY by Company A's work! They went above and beyond all of our expectations with design, usability. and branding, I will reccommend them to everyone I know!<span class="quote-marks">"</span> </p>
+          <p class="quote-phrase"><span class="quote-marks">"</span> Ayez le courage d’être heureux <span class="quote-marks">"</span> </p>
         </div>
         <div class="authorContainer">
-          <p class="quote-author">John Doe // Local Business Owner</p>
+          <p class="quote-author">Pape françois aux jeunes des JMJ</p>
         </div>
       </li>
       <li class="slide">
         <div class="quoteContainer">
-          <p class="quote-phrase"><span class="quote-marks">"</span> I could not stop staring! Company A's Web Solutions are by far the most elegant solutions, you can't beat their quality and attention to detail! <span class="quote-marks">"</span> </p>
+          <p class="quote-phrase"><span class="quote-marks">"</span> On ne peut être heureux qu’en laissant pleinement notre personnalité s’exprimer <span class="quote-marks">"</span> </p>
         </div>
         <div class="authorContainer">
-          <p class="quote-author">Andy Fakename // CEO: Andy's Camping Supplies</p>
+          <p class="quote-author">Pape françois aux jeunes des JMJ</p>
         </div>
       </li>
       <li class="slide">
         <div class="quoteContainer">
-          <p class="quote-phrase"><span class="quote-marks">"</span>Carl Fakeguy, was the most helpful designer I've ever hired. He listened to my ideas and advised against things that could negatively affect my CEO. Company A is by far the most generous and helpful company, 5/5!<span class="quote-marks">"</span> </p>
+          <p class="quote-phrase"><span class="quote-marks">"</span>Nous nous retrouvons étourdis et abrutis tandis que d’autres (…) décident de l’avenir pour nous<span class="quote-marks">"</span> </p>
         </div>
         <div class="authorContainer">
-          <p class="quote-author">Janice Falsename</p>
+          <p class="quote-author">Pape françois aux jeunes des JMJ</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>Vivre sans foi n’est pas vivre mais vivoter, il ne faut jamais vivoter<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">Giorgio Frassati</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>L’homme le plus heureux, c’est celui qui fait le bonheur d’un plus grand nombre d’autre<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">père Zanotti</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>Grâce à L’amour, l’acte le plus banal de, notre vie peut devenir le plus sublime<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">père Zanotti</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>Notre drame à nous est que nous avons souvent peur d’un bonheur trop simple<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">père Zanotti</p>
+        </div>
+      </li>
+      <li class="slide">
+        <div class="quoteContainer">
+          <p class="quote-phrase"><span class="quote-marks">"</span>Faire suinter la joie du présent<span class="quote-marks">"</span> </p>
+        </div>
+        <div class="authorContainer">
+          <p class="quote-author">père Zanotti</p>
         </div>
       </li>
     </ul>
   </div>
+  <div class="btn-bar">
+    <div id="buttons"><a id="prev" href="#"><</a><a id="next" href="#">></a> </div>
+  </div>
 </div>
-
-
-
-
-« Ayez le courage d’être heureux » Pape françois aux jeunes des JMJ
-
-« On ne peut être heureux qu’en laissant pleinement notre personnalité s’exprimer » Pape françois aux jeunes des JMJ
-
-« Nous nous retrouvons étourdis et abrutis tandis que d’autres (…) décident de l’avenir pour nous » Pape françois aux jeunes des JMJ
-
-« Vivre sans foi n’est pas vivre mais vivoter, il ne faut jamais vivoter » Giorgio Frassati 
-
-“L’homme le plus heureux, c’est celui qui fait le bonheur d’un plus grand nombre d’autre” père Zanotti
-
-“Grâce à L’amour, l’acte le plus banal de, notre vie peut devenir le plus sublime” père Zanotti
-
-“Notre drame à nous est que nous avons souvent peur d’un bonheur trop simple” père Zanotti
-
-« Faire suinter la joie du présent » père Zanotti 
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script>

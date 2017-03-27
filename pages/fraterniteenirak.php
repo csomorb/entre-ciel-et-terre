@@ -1,3 +1,4 @@
+<a href="http://fraternite-en-irak.org/" target="_blank"><img src="img/logo_fei.png" alt="Fraternite en Irak"/></a>
 <h2 class="subtitle"> Qui sont ils? </h2>
 
 	L’idée de la création de Fraternité en Irak a germé en 2009 au sein d’un groupe d’amis étudiants très marqués par la situation des réfugiés irakiens en Syrie dont les journaux se faisaient alors l’écho. À l’époque, ils cherchent un moyen de leur venir en aide à ces personnes chassées de chez elles par l’horreur de la guerre, le terrorisme et la précarité. Mais concours et examens ont raison de leur détermination.
@@ -8,26 +9,29 @@ Le hasard des rencontres leur permet d’entrer en contact avec monseigneur Loui
  L’action de l’association s’articule autour de deux axes :
 
     Aider les minorités déplacées à l’intérieur de l’Irak, qui font face à des situations d’urgence
-    Renforcer l’intégration des minorités grâce à des projets profitant à la majorité des habitants, dans les domaines de la santé et de l’éducation notamment
+    Renforcer l’intégration des minorités grâce à des projets profitant à la majorité des habitants, dans les domaines de la santé et de l’éducation notamment.
 
 
 
 
-<h2 class="subtitle"> Leurs Idéaux </h2>
+<h2 class="subtitle marginTop30"> Leurs Idéaux </h2>
+<div class="content">
+    <ul>
+        <li>Fraternité</li>
+        <li>Dignité</li>
+        <li>Vérité</li>
+        <li>Discrétion</li>
+        <li>Prudence</li>
+        <li>Fidélité</li>
+        <li>Humilité</li>
+        <li>écoute</li>
+        <li>Responsabilité</li>
+        <li>Efficacité</li>
+    </ul>
+</div>
 
-Fraternité
-Dignité
-Vérité
-Discrétion
-Prudence
-Fidélité
-Humilité
-écoute
-Responsabilité
-Efficacité
 
-
-<h2 class="subtitle"> Notre Missions avec FEI </h2>
+<h2 class="subtitle marginTop30"> Notre Missions avec FEI </h2>
 
 La situation en Irak à beaucoup évolué ces derniers mois, puisque la plaine de Ninive à été libéré des mains de Daesh. Fraternité en Irak a beaucoup oeuvré au quotidien pour facilité la vie des réfugiés. Nous nous mettrons ainsi au service des réfugiés afin de les aider à se réinstaller chez eux!
 
