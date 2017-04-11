@@ -1,3 +1,16 @@
+<div class="titre-div">
+        <div>
+            <a href="/accueil">
+            <img src="./img/logo.jpg" class="logo" /> 
+            </a>
+        </div>
+        <div class="titre">
+            <div>
+                <h1 class="title has-text-centered">Entre ciel et terre</h1>
+                <h2 class="subtitle has-text-centered" id="ss-titre"></h2>Entre la France et L'Inde<br/>Entre une selle de vélo et des rencontres</h2>
+            </div>
+        </div>
+    </div>
 <div class="has-text-centered">
     <a href="/accueil"><h5 class="title is-5 margin-bottom-12"><i class="fa fa-angle-right" aria-hidden="true"></i> Français</h5></a>
     <a href="/welcome"><h5 class="title is-5 margin-bottom-12"><i class="fa fa-angle-right" aria-hidden="true"></i> English</h5></a>

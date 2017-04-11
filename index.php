@@ -23,13 +23,14 @@ $page = "pages/" . $params . ".php";
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/jquery.3.2.0.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     
 </head>
 <body class="container">
     <div class="titre-div">
         <div>
-            <a href="/language">
-            <img src="./img/logo.jpg" class="logo"/> 
+            <a id="logo_acceuil" href="/language">
+            <img src="./img/logo.jpg" class="logo" /> 
             </a>
         </div>
         <div class="titre">

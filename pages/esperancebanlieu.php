@@ -1,3 +1,16 @@
+<div class="titre-div">
+        <div>
+            <a href="/accueil">
+            <img src="./img/logo.jpg" class="logo" /> 
+            </a>
+        </div>
+        <div class="titre">
+            <div>
+                <h1 class="title has-text-centered">Entre ciel et terre</h1>
+                <h2 class="subtitle has-text-centered" id="ss-titre"></h2>Espérance banlieue</h2>
+            </div>
+        </div>
+    </div>
 <a href="http://www.esperancebanlieues.org/" target="_blank"><img src="img/logo_esperance.png" alt="Espérance banlieu"/></a>
 <h2 class="subtitle">Qui sont ils ?</h2>
 
@@ -25,16 +38,7 @@ nous allons nous associer à une classe de 5ème de la Cordée, école situé à
     <li>Nous allons essayer de faire en sorte que les enfants soient nos “Antennes relai” en France ou ils pourront envoyer une newsletter et même publier des posts Facebook des aventures que nous vivrons.</li>
 </ul>    
 
-Lien vers le site internet:  <a href="http://www.esperancebanlieues.org/">http://www.esperancebanlieues.org/</a>
-
 </div>
-
-
-<script>
-(function() {
-    $('#ss-titre').html("Espérance banlieue");
-});
-</script>
 
 
 

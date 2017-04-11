@@ -1,3 +1,16 @@
+ <div class="titre-div">
+        <div>
+            <a href="/accueil">
+            <img src="./img/logo.jpg" class="logo" /> 
+            </a>
+        </div>
+        <div class="titre">
+            <div>
+                <h1 class="title has-text-centered">Entre ciel et terre</h1>
+                <h2 class="subtitle has-text-centered" id="ss-titre"></h2>L'équipe</h2>
+            </div>
+        </div>
+    </div>
 <h2 class="subtitle">Augustin</h2>
 <div class="columns">
   <div class="column is-10">
@@ -36,8 +49,3 @@ Cela permettra à notre fine équipe de découvrir sur le terrain ce qui se pass
     <img src="img/cousin.JPG" alt="les cousins" class="img-right">    
   </div>
 </div>
-<script>
-$(function() {
-    $('#ss-titre').html("L'équipe");
-});
-</script>

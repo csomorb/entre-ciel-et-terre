@@ -1,3 +1,16 @@
+<div class="titre-div">
+        <div>
+            <a href="/accueil">
+            <img src="./img/logo.jpg" class="logo" /> 
+            </a>
+        </div>
+        <div class="titre">
+            <div>
+                <h1 class="title has-text-centered">Entre ciel et terre</h1>
+                <h2 class="subtitle has-text-centered" id="ss-titre"></h2>Fraternité en Irak</h2>
+            </div>
+        </div>
+    </div>
 <a href="http://fraternite-en-irak.org/" target="_blank"><img src="img/logo_fei.png" alt="Fraternite en Irak"/></a>
 <h2 class="subtitle"> Qui sont ils? </h2>
 
@@ -34,10 +47,3 @@ Le hasard des rencontres leur permet d’entrer en contact avec monseigneur Loui
 <h2 class="subtitle marginTop30"> Notre Missions avec FEI </h2>
 
 La situation en Irak à beaucoup évolué ces derniers mois, puisque la plaine de Ninive à été libéré des mains de Daesh. Fraternité en Irak a beaucoup oeuvré au quotidien pour facilité la vie des réfugiés. Nous nous mettrons ainsi au service des réfugiés afin de les aider à se réinstaller chez eux!
-
-
-<script>
-(function() {
-    $('#ss-titre').html("Fraternité en Irak");
-});
-</script>

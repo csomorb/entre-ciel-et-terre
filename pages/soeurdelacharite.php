@@ -1,3 +1,17 @@
+ <div class="titre-div">
+        <div>
+            <a href="/language">
+            <img src="./img/logo.jpg" class="logo" /> 
+            </a>
+        </div>
+        <div class="titre">
+            <div>
+                <h1 class="title has-text-centered">Entre ciel et terre</h1>
+                <h2 class="subtitle has-text-centered" id="ss-titre"></h2>Soeurs de la charité</h2>
+            </div>
+        </div>
+    </div>
+
 <a href="http://www.motherteresa.org/french/layout.html" target="_blank"><img src="img/logo_missionaire.jpg" alt="logo"/></a>
 <h2 class="subtitle">Qui sont elles?</h2>
 
@@ -19,10 +33,3 @@ Dans ce cadre, le vœu de pauvreté occupe une place centrale dans la vie et la 
    Nous nous rendrons sur place afin de se rendre disponible aux soeurs et de les aider dans leur mission. Par ailleurs nous voulons vraiment comprendre comment ces soeurs réusssient à être remplis de joie en s'occupant des rejetés qui "n'interesse" personne.
 
 <br/>
-lien vers leur site internet: <a href="http://www.motherteresa.org/french/layout.html" target="_blank">http://www.motherteresa.org/french/layout.html</a> 
-
-<script>
-(function() {
-    $('#ss-titre').html("Soeurs de la charité");
-});
-</script>
