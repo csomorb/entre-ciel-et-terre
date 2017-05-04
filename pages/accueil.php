@@ -7,41 +7,41 @@
         <div class="titre">
             <div>
                 <h1 class="title has-text-centered">Entre ciel et terre</h1>
-                <h2 class="subtitle has-text-centered" id="ss-titre"></h2>Entre la France et L'Inde<br/>Entre une selle de vélo et des rencontres</h2>
+                <h2 class="subtitle has-text-centered" id="ss-titre">Entre la France et L'Inde<br/>Entre une selle de vélo et des rencontres</h2>
             </div>
         </div>
     </div>
 
-div class="tile is-ancestor">
+<div class="tile is-ancestor">
   <!-- All other tile elemnts -->
   <div class="tile is-parent is-vertical">
-    <div class="tile is-child box">
+    <div class="tile is-child box carre_accueil">
       <p class="title"><a href="/equipe">L'équipe</a></p>
     </div>
-    <div class="tile is-child box">
+    <div class="tile is-child box carre_accueil">
       <p class="title">Nous nous engageaons auprès de</p>
       <a href="esperancebanlieu">Espérance banlieu </a> <br/>
       <a href="fraterniteenirak">Fraternité en Irak </a> <br/>
       <a href="soeurdelacharite">Soeur de la charité </a>
     </div>
-    <div class="tile is-child box">
+    <div class="tile is-child box carre_accueil">
       <p class="title"><a href="/contact">Contact</a></p>
     </div>
   </div>
   
   <div class="tile is-parent is-vertical">
-    <div class="tile is-child box">
-      <p class="title">Nous aider</p>
+    <div class="tile is-child box carre_accueil">
+      <p class="title"><a href="aide">Nous aider</a></p>
     </div>
-    <div class="tile is-child box">
+    <div class="tile is-child box carre_accueil">
       <p class="title"><a href="projet">Projet</a></p>
     </div>
-    <div class="tile is-child box">
+    <div class="tile is-child box carre_accueil">
       <p class="title"><a href="itineraire">Itinéraire</a></p>
     </div>
   </div>
  <div class="tile is-parent">
-    <div class="tile is-child box">
+    <div class="tile is-child box carre_accueil">
       <p class="title"><a href="carnet">Carnet de voyage</a></p>
     </div>
   </div>

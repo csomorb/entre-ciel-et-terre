@@ -52,7 +52,30 @@ a{
   justify-content: flex-start;
 }
 
+.input, .textarea{
+  border-radius: 0px;
+}
 
+
+.carre_accueil{
+  border-radius:0px
+}
+
+.carre_accueil:hover{
+  background-color:#7E1616;
+}
+
+.carre_accueil:hover p, .carre_accueil:hover a , .carre_accueil:hover h2, .carre_accueil:hover li{
+  color:#ffffff;
+}
+
+#language_back{
+  background-image: url("../img/couverture.jpg");
+  height:800px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
 
 
 #carousel {
