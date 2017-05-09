@@ -6,7 +6,6 @@
     <script src="../js/jquery.3.2.0.min.js"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="../css/bulma.css">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<!-- css -->
 	<link rel="stylesheet" href="../css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,3 +21,9 @@ function test_input($data) {
 }
 ?>
 <div class="container">
+    <h1 class="title is-1">Modification du site</h1>
+    <li><a href="addvideo.php">Ajouter une vidéo</a></li>
+    
+</div>
+</body>
+</html>
