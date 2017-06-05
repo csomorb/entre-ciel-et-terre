@@ -22,11 +22,12 @@ $page = "pages/" . $params . ".php";
     <meta name="author" content="Barnabas Csomor">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
     <script type="text/javascript" src="js/jquery.3.2.0.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     
 </head>
-<body class="container">
+<body>
 
 <?php
 if (file_exists($page)) {

@@ -11,6 +11,7 @@
             </div>
         </div>
     </div>
+    <div class="container">
 <a href="http://fraternite-en-irak.org/" target="_blank"><img src="img/logo_fei.png" alt="Fraternite en Irak"/></a>
 
     <div class="tile is-ancestor">
@@ -75,7 +76,7 @@
         </div>
     </div>
 
-
+</div>
 
 
 

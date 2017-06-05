@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-
+<div class="container">
 <div class="tile is-ancestor">
   <!-- All other tile elemnts -->
   <div class="tile is-parent is-vertical">
@@ -125,7 +125,7 @@
     <div id="buttons"><a id="prev" href="#"><</a><a id="next" href="#">></a> </div>
   </div>
 </div>
-
+</div>
 
 <script>
 // script pour le slider

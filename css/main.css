@@ -35,6 +35,12 @@ a{
     margin-bottom: 40px;
 }
 
+.language-h5{
+    color: #800000;
+    font-weight: 500;
+    font-size: 2rem !important;
+}
+
 .margin-bottom-12 {
     margin-bottom: 12px;
 }
@@ -68,13 +74,34 @@ a{
 .carre_accueil:hover p, .carre_accueil:hover a , .carre_accueil:hover h2, .carre_accueil:hover li{
   color:#ffffff;
 }
+.img-language{
+  width:100%;
+  height:auto;
+}
+.z-index-top{
+  z-index:5;
+  position: fixed;
+  width: 100%;
+}
 
 #language_back{
-  background-image: url("../img/couverture.jpg");
-  height:800px;
-  background-repeat:no-repeat;
-  background-size:contain;
-  background-position:center;
+  z-index:0;
+  top: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.damavand{
+  position: relative;
+  width: 50%;
+  top: -150px;
+  left: 50%;
 }
 
 

@@ -11,6 +11,7 @@
             </div>
         </div>
     </div>
+<div class="container">
     <a href="http://www.motherteresa.org/french/layout.html" target="_blank"><img src="img/logo_missionaire.jpg" alt="logo"/></a>
     <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
@@ -57,7 +58,7 @@
             </div>
         </div>
     </div>
-
+</div>
 
 
 

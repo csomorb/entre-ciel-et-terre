@@ -11,6 +11,7 @@
             </div>
         </div>
     </div>
+<div class="container">
     <a href="http://www.esperancebanlieues.org/" target="_blank"><img src="img/logo_esperance.png" alt="Espérance banlieu"/></a>
     <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
@@ -58,7 +59,7 @@
             </div>
         </div>
     </div>
-
+</div>
 
 
 
