@@ -15,7 +15,7 @@
     <a href="http://www.motherteresa.org/french/layout.html" target="_blank"><img src="img/logo_missionaire.jpg" alt="logo"/></a>
     <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre bordeau white">
                 <h2 class="subtitle">Qui sont elles?</h2>
                 <p>
                        Le 16 août 1948, Mère Teresa fonde un nouvel ordre. Dès 1949, sœur Teresa est rejointe par 
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre orange white">
                 <h2 class="subtitle">Notre Missions avec les missionaires de la charité</h2>
                 <p>
                    Nous nous rendrons sur place afin de se rendre disponible aux soeurs et de les aider dans leur mission.
@@ -39,7 +39,7 @@
     
     <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre jaune">
                 <h2 class="subtitle">Leurs Idéaux</h2>
                 <p>
                    Les Missionnaires de la Charité, outre les trois vœux de pauvreté, de chasteté et d’obéissance, 

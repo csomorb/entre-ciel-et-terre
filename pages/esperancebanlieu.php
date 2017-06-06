@@ -15,7 +15,7 @@
     <a href="http://www.esperancebanlieues.org/" target="_blank"><img src="img/logo_esperance.png" alt="Espérance banlieu"/></a>
     <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre white bordeau">
                 <h2 class="subtitle">Qui sont ils ?</h2>
                 <p>
                    Espérance Banlieue est une école fondé pour favoriser le développement d’écoles 
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box white carre orange">
                 <h2 class="subtitle">Leurs Idéaux</h2>
                     <p>
                         La Fondation Espérance banlieues a pour mission de :
@@ -36,7 +36,7 @@
     </div>
     <div class="tile is-ancestor">
         <div class="tile is-parent">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre jaune">
                 <h2 class="subtitle">Notre Missions avec Espérance Banlieue</h2>
                 <div class="content">
                     <p>

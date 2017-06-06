@@ -67,6 +67,26 @@ a{
   border-radius:0px
 }
 
+.carre{
+  border-radius:0px
+}
+
+.white p, .white a , .white h2, .white li, .white h3{
+  color:#ffffff;
+}
+
+.bordeau{
+  background-color:#7E1616;
+}
+
+.jaune{
+  background-color: #ffbb00;
+}
+
+.orange{
+  background-color: #ea6500;
+}
+
 .carre_accueil:hover{
   background-color:#7E1616;
 }
@@ -200,4 +220,23 @@ a#next:hover {
 .authorContainer {
   display: table;
   width: 100%;
+}
+
+@media screen and (max-width: 476px) {
+  .logo {
+    width:23%;
+    height: auto;
+  }
+  
+  .titre {
+    margin-top: -13px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container{
+    padding-left:7px;
+    padding-right:7px;
+  }
 }

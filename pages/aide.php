@@ -15,7 +15,7 @@
     <div class="container">
         <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre white orange"> <p>
                         Afin de nous aider dans l’organisation de ce périple nous vous proposons plusieurs
 
 pistes. La première étant par le soutien moral en nous éclairant par vos impressions et sur
@@ -25,12 +25,14 @@ vos idées que vous pourriez avoir en prenant connaissance de ce projet. Plus no
 sera complet au point de vue humain et plus ce sera une réussite, nous attendons donc avec
 
 impatience vos retours.
+</p>
             </div>
         </div>
     </div>
     <div class="tile is-ancestor">
          <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre white bordeau">
+                <p>
                 La seconde piste est bien plus matérielle car évidement après avoir lu un tel rapport
 
 la première question venant à l’esprit est avec quels moyens ? Cette question fait partie
@@ -40,10 +42,11 @@ aussi de notre effort à communiquer sur ce projet, c’est que sans l’aide ma
 part, tout ce voyage sera impossible. Voici donc un petit tableau de ce que nous pourrions
 
 vous offrir pour vous remercier de votre aide:
+</p>
             </div>
         </div>
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre">
                <table class="table">
                   <thead>
                     <tr>
@@ -100,7 +103,7 @@ récit spécial à la fin de nos aventures.</th>
 
 <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre orange white"> <p>
 La troisième piste serait une aide spirituelle, même si de votre côté vous n’y voyez
 
 pas l’intérêt, pour nous cette aspect est très important pour une réussite total. Nous vous
@@ -108,13 +111,14 @@ pas l’intérêt, pour nous cette aspect est très important pour une réussite
 demandons donc pour cette partie de réciter cette prière, une fois, dix fois, tous les jours,
 
 selon votre désir de nous pousser en avant :
+</p>
             </div>
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre">
                 <img src="../img/croix.JPG">
             </div>
         </div>
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre jaune">
                 <p class="text-center">
 Seigneur Jésus,<br/>
 
@@ -160,7 +164,7 @@ saufs à la fin de notre voyage.
     </div>
     <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre bordeau white">
                 <h3 class="title has-text-centered"> Merci !</h3>      
             </div>
         </div>

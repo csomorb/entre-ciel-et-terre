@@ -15,7 +15,7 @@
     <div class="content">
         <div class="tile is-ancestor">
             <div class="tile is-parent is-vertical">
-                <div class="tile is-child box carre_accueil">
+                <div class="tile is-child box carre orange white">
                 <p>
     L’aventure sportive doit faire partie intégrante de notre voyage tout en nous donnant l’opportunité de vivre des rencontres providentielles qui sont au cœur même de ce que nous voulons vivre. Le vélo est donc le moyen de transport idéal pour cela, car nous resterons ainsi en interaction avec le monde environnant.
 La seconde partie de notre voyage sera de se donner au service des autres, et cela par le biais d’associations déjà actives en Irak et en Inde en faisant une pause de trois mois dans chacun de ses pays.
@@ -32,7 +32,7 @@ Vivant depuis toujours en France, nous nous sommes peu à peu questionnés sur l
         </div>
         <div class="tile is-ancestor"> 
             <div class="tile is-parent is-vertical">
-                <div class="tile is-child box carre_accueil">
+                <div class="tile is-child box carre bordeau white">
         <p> 
 Ce grand voyage représente bien sûr un défi sportif qui donnera place à inattendue et donc à l'aventure, loin de nos terres d'origine, du confort et de la sécurité auxquels nous sommes habitués. Ce défi en plus de correspondre à notre personnalité qui veut toujours pousser plus loin la quête de dépassement de soi. 
 .Ce défi serait de parcourir plus de 7000 km sur nos selles de vélos, puis de traverser l’Inde à moto. En laissant la providence nous “guider”.
@@ -53,7 +53,7 @@ Etant tous les deux montagnards aguerris, nous nous fixons des sommets à gravir
         </div>
         <div class="tile is-ancestor">
             <div class="tile is-parent is-vertical">
-                <div class="tile is-child box carre_accueil">
+                <div class="tile is-child box carre jaune">
         <p>
     Tout homme est en quête de joie de vivre. Cette recherche nous interpelle sur la façon dont
 

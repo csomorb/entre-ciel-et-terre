@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    
+<div class="container">  
     <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical">
             <div class="tile is-child box carre_accueil">
@@ -41,7 +41,7 @@ while ($donnees = $reponse->fetch()){
 }
 ?>
 
-
+</div>
 <script>
 	$(function() {
     var $allVideos = $("iframe[src^='//player.vimeo.com'], iframe[src^='//www.youtube.com'], object, embed"),
@@ -68,3 +68,4 @@ while ($donnees = $reponse->fetch()){
 
 });
 </script>
+

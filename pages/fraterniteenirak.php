@@ -16,7 +16,7 @@
 
     <div class="tile is-ancestor">
         <div class="tile is-parent is-vertical is-9">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre bordeau white">
                 <h2 class="subtitle"> Qui sont ils? </h2>
                 <div class="content">
                     <p>
@@ -43,7 +43,7 @@
             </div>
         </div>  
         <div class="tile is-parent is-vertical is-3">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre orange white">
                 <h2 class="subtitle"> Leurs Idéaux </h2>
                 <div class="content">
                     <ul>
@@ -65,7 +65,7 @@
     </div>
     <div class="tile is-ancestor">
         <div class="tile is-parent">
-            <div class="tile is-child box carre_accueil">
+            <div class="tile is-child box carre jaune">
               <h2 class="subtitle"> Notre Missions avec FEI </h2>
                     <p>
                     La situation en Irak à beaucoup évolué ces derniers mois, puisque la plaine de Ninive à été libéré des mains de Daesh. 

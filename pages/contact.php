@@ -232,7 +232,7 @@ mail($mail,$sujet,$message,$header);
             </div>
         </div>
     </div>
-
+<div class="container">
 <div class="marginTop100">
     Si le projet vous intéresse et que vous souhaitez plus d'informations, n'hésitez pas à nous contacter.
 </div>
@@ -278,3 +278,4 @@ mail($mail,$sujet,$message,$header);
 </div>
 <div class="g-recaptcha" data-sitekey="6LedpxoUAAAAAIkS9QFqSyn-8R8R_CM2d3wklp9A"></div>
 </form>
+</div>
