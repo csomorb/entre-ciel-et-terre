@@ -20,9 +20,9 @@
     </div>
     <div class="tile is-child box carre_accueil">
       <p class="title">Nous nous engageaons auprès de</p>
-      <a href="esperancebanlieu">Espérance banlieu </a> <br/>
+      <a href="esperancebanlieu">Espérance Banlieue </a> <br/>
       <a href="fraterniteenirak">Fraternité en Irak </a> <br/>
-      <a href="soeurdelacharite">Soeur de la charité </a>
+      <a href="soeurdelacharite">Soeur de la Charité </a>
     </div>
     <div class="tile is-child box carre_accueil">
       <p class="title"><a href="/contact">Contact</a></p>
@@ -89,7 +89,7 @@
       </li>
       <li class="slide">
         <div class="quoteContainer">
-          <p class="quote-phrase"><span class="quote-marks">"</span>L’homme le plus heureux, c’est celui qui fait le bonheur d’un plus grand nombre d’autre<span class="quote-marks">"</span> </p>
+          <p class="quote-phrase"><span class="quote-marks">"</span>L’homme le plus heureux, c’est celui qui fait le bonheur d’un plus grand nombre d’autres<span class="quote-marks">"</span> </p>
         </div>
         <div class="authorContainer">
           <p class="quote-author">père Zanotti</p>
@@ -97,7 +97,7 @@
       </li>
       <li class="slide">
         <div class="quoteContainer">
-          <p class="quote-phrase"><span class="quote-marks">"</span>Grâce à L’amour, l’acte le plus banal de, notre vie peut devenir le plus sublime<span class="quote-marks">"</span> </p>
+          <p class="quote-phrase"><span class="quote-marks">"</span>Grâce à l’amour, l’acte le plus banal de, notre vie peut devenir le plus sublime<span class="quote-marks">"</span> </p>
         </div>
         <div class="authorContainer">
           <p class="quote-author">père Zanotti</p>

@@ -34,16 +34,16 @@ Vivant depuis toujours en France, nous nous sommes peu à peu questionnés sur l
             <div class="tile is-parent is-vertical">
                 <div class="tile is-child box carre bordeau white">
         <p> 
-Ce grand voyage représente bien sûr un défi sportif qui donnera place à inattendue et donc à l'aventure, loin de nos terres d'origine, du confort et de la sécurité auxquels nous sommes habitués. Ce défi en plus de correspondre à notre personnalité qui veut toujours pousser plus loin la quête de dépassement de soi. 
+Ce grand voyage représente bien sûr un défi sportif qui donnera place à inattendu et donc à l'aventure, loin de nos terres d'origine, du confort et de la sécurité auxquels nous sommes habitués. Ce défi en plus de correspondre à notre personnalité qui veut toujours pousser plus loin la quête de dépassement de soi. 
 .Ce défi serait de parcourir plus de 7000 km sur nos selles de vélos, puis de traverser l’Inde à moto. En laissant la providence nous “guider”.
-Etant tous les deux montagnards aguerris, nous nous fixons des sommets à gravir le long de la route :
+Etant tout les deux montagnards aguerris, nous nous fixons des sommets à gravir le long de la route :
         </p>
         <p>
         <ul>
-            <li>	Grossglockner, en Autriche, 3 798m </li>
-             <li>   Triglav en Slovénie, 2894m </li>
-             <li> Mont Damavand en Iran, 5671m </li>
-             <li>    Le mont Aragats en Arménie, 4090m </li>
+            <li>	Grossglockner, en Autriche, 3 798 m </li>
+             <li>   Triglav en Slovénie, 2894 m </li>
+             <li> Mont Damavand en Iran, 5671 m </li>
+             <li>    Le mont Aragats en Arménie, 4090 m </li>
              <li> Une montagne en Inde </li>
         </ul>
         </p>

@@ -32,8 +32,8 @@ impatience vos retours.
     <div class="tile is-ancestor">
          <div class="tile is-parent is-vertical">
             <div class="tile is-child box carre white bordeau">
-                <p>
-                La seconde piste est bien plus matérielle car évidement après avoir lu un tel rapport
+                <p style="    margin-bottom: 50px;">
+                La seconde piste est bien plus matérielle car évidemment après avoir lu un tel rapport
 
 la première question venant à l’esprit est avec quels moyens ? Cette question fait partie
 
@@ -42,7 +42,31 @@ aussi de notre effort à communiquer sur ce projet, c’est que sans l’aide ma
 part, tout ce voyage sera impossible. Voici donc un petit tableau de ce que nous pourrions
 
 vous offrir pour vous remercier de votre aide:
+
+
+   
+
 </p>
+<a href="https://www.ameliste.fr/list/list?site=entreterreetciel" target="new">
+<div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <img src="../img/logo.jpg" alt="logo">
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Nous aider</strong>
+          <br>
+          <span style="color:black;">  Vous pouvez nous aider avec un don en cliquant ici</span>             
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
+</a>
             </div>
         </div>
         <div class="tile is-parent is-vertical">

@@ -38,6 +38,7 @@ while ($donnees = $reponse->fetch()){
 		echo "<h3 class=\"margin_bottom_20\">".$donnees['titre']."</h3>\n";
 		echo "<div class=\"videoWrapper margin_bottom_20\">".$donnees['lien']."</div>";
 		echo "\n<p class=\"text_right\">".$donnees['datecr']."</p><hr/>\n";
+		echo "\n<p>".$donnees['descr']."</p>\n";
 }
 ?>
 

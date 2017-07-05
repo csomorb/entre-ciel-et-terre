@@ -21,7 +21,7 @@
                        Le 16 août 1948, Mère Teresa fonde un nouvel ordre. Dès 1949, sœur Teresa est rejointe par 
                        une ancienne cuisinière du collège Sainte-Marie puis par l’une de ses anciennes élèves, Subashini Das. 
                        L’ordre des Missionnaires de la Charité se met sur pied. Principalement consacrées aux pauvres, les religieuses 
-                       de la Congrégation naissante se spécialisent dans le soutien des malades et des enfants abandonnés
+                       de la Congrégation naissante se spécialisent dans le soutien des malades et des enfants abandonnés.
                 </p>
             </div>
         </div>
@@ -29,8 +29,8 @@
             <div class="tile is-child box carre orange white">
                 <h2 class="subtitle">Notre Missions avec les missionaires de la charité</h2>
                 <p>
-                   Nous nous rendrons sur place afin de se rendre disponible aux soeurs et de les aider dans leur mission.
-                   Par ailleurs nous voulons vraiment comprendre comment ces soeurs réusssient à être remplis de joie en
+                   Nous nous rendre sur place afin de se rendre disponible aux soeurs et de les aider dans leur mission.
+                   Par ailleurs nous voulons vraiment comprendre comment ces soeurs réusssissent à être remplis de joie en
                    s'occupant des rejetés qui "n'interesse" personne.
                 </p>
             </div>

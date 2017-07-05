@@ -87,6 +87,10 @@ a{
   background-color: #ea6500;
 }
 
+.black{
+  color:black;
+}
+
 .carre_accueil:hover{
   background-color:#7E1616;
 }
