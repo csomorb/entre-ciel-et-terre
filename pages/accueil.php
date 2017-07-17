@@ -16,33 +16,33 @@
   <!-- All other tile elemnts -->
   <div class="tile is-parent is-vertical">
     <div class="tile is-child box carre_accueil">
-      <p class="title"><a href="/equipe">L'équipe</a></p>
+      <p class="title center"><a href="/equipe">L'équipe</a></p>
     </div>
     <div class="tile is-child box carre_accueil">
-      <p class="title">Nous nous engageaons auprès de</p>
+      <p class="title center">Nous nous engageaons auprès de</p>
       <a href="esperancebanlieu">Espérance Banlieue </a> <br/>
       <a href="fraterniteenirak">Fraternité en Irak </a> <br/>
       <a href="soeurdelacharite">Soeur de la Charité </a>
     </div>
     <div class="tile is-child box carre_accueil">
-      <p class="title"><a href="/contact">Contact</a></p>
+      <p class="title center"><a href="/contact">Contact</a></p>
     </div>
   </div>
   
   <div class="tile is-parent is-vertical">
     <div class="tile is-child box carre_accueil">
-      <p class="title"><a href="aide">Nous aider</a></p>
+      <p class="title center"><a href="aide">Nous aider</a></p>
     </div>
     <div class="tile is-child box carre_accueil">
-      <p class="title"><a href="projet">Projet</a></p>
+      <p class="title center"><a href="projet">Projet</a></p>
     </div>
     <div class="tile is-child box carre_accueil">
-      <p class="title"><a href="itineraire">Itinéraire</a></p>
+      <p class="title center"><a href="itineraire">Itinéraire</a></p>
     </div>
   </div>
  <div class="tile is-parent">
     <div class="tile is-child box carre_accueil">
-      <p class="title"><a href="carnet">Carnet de voyage</a></p>
+      <p class="title center"><a href="carnet">Carnet de voyage</a></p>
     </div>
   </div>
 </div>

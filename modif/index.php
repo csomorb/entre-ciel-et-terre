@@ -26,6 +26,7 @@ function test_input($data) {
 <div class="container">
     <h1 class="title is-1">Modification du site</h1>
     <li><a href="addvideo.php">Ajouter une vidéo</a></li>
+    <li><a href="deletevideo.php">Supprimer une vidéo</a></li>
     
 </div>
 </body>

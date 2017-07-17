@@ -1,4 +1,4 @@
-AuthName "Modification du site"
-AuthType Basic
-AuthUserFile "./.htpasswd"
-Require valid-user
+#AuthName "Modification du site"
+#AuthType Basic
+#AuthUserFile "./.htpasswd"
+#Require valid-user
