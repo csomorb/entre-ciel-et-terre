@@ -6,7 +6,7 @@
         </div>
         <div class="titre">
             <div>
-                <h1 class="title has-text-centered">Entre ciel et terre</h1>
+                <h1 class="title has-text-centered">Entre terre et ciel</h1>
                 <h2 class="subtitle has-text-centered" id="ss-titre">Entre la France et L'Inde<br/>Entre une selle de vélo et des rencontres</h2>
             </div>
         </div>

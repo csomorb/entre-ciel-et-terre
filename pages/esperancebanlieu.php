@@ -6,7 +6,7 @@
         </div>
         <div class="titre">
             <div>
-                <h1 class="title has-text-centered">Entre ciel et terre</h1>
+                <h1 class="title has-text-centered">Entre terre et ciel</h1>
                 <h2 class="subtitle has-text-centered" id="ss-titre">Espérance banlieue</h2>
             </div>
         </div>
