@@ -26,10 +26,12 @@ function test_input($data) {
 <div class="container">
     <h1 class="title is-1">Modification du site</h1>
     <li><a href="addvideo.php">Ajouter une vidéo</a></li>
-    <li><a href="deletevideo.php">Supprimer une vidéo</a></li>
     <li><a href="addmessage.php">Ajouter un message</a></li>
-    <li><a href="deletemessage.php">Supprimer un message</a></li>
+    <li><a href="addphoto.php">Ajouter des photos</a></li>
     
+    <li><a href="deletemessage.php">Supprimer un message</a></li>
+    <li><a href="deletevideo.php">Supprimer une vidéo</a></li>
+    <li><a href="deletephoto.php">Supprimer des photos</a></li>
 </div>
 </body>
 </html>

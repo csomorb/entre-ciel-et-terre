@@ -1,0 +1,14 @@
+[08-Sep-2017 10:47:36 UTC] PHP Warning:  PDO::query(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where type='message'' at line 1 in /home/ubuntu/workspace/modif/deletemessage.php on line 10
+[08-Sep-2017 10:47:36 UTC] PHP Stack trace:
+[08-Sep-2017 10:47:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/modif/deletemessage.php:0
+[08-Sep-2017 10:47:36 UTC] PHP   2. PDO->query() /home/ubuntu/workspace/modif/deletemessage.php:10
+[08-Sep-2017 10:47:36 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modif/deletemessage.php on line 11
+[08-Sep-2017 10:47:36 UTC] PHP Stack trace:
+[08-Sep-2017 10:47:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/modif/deletemessage.php:0
+[08-Sep-2017 10:48:19 UTC] PHP Warning:  PDO::query(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where type = 'message'' at line 1 in /home/ubuntu/workspace/modif/deletemessage.php on line 10
+[08-Sep-2017 10:48:19 UTC] PHP Stack trace:
+[08-Sep-2017 10:48:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/modif/deletemessage.php:0
+[08-Sep-2017 10:48:19 UTC] PHP   2. PDO->query() /home/ubuntu/workspace/modif/deletemessage.php:10
+[08-Sep-2017 10:48:19 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modif/deletemessage.php on line 11
+[08-Sep-2017 10:48:19 UTC] PHP Stack trace:
+[08-Sep-2017 10:48:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/modif/deletemessage.php:0

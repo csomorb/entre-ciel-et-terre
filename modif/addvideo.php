@@ -7,12 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$descr =  nl2br(test_input($_POST["descr"]));
 	$date = test_input($_POST["date"]);
 	if (!empty($lien)){
-		$req = $bdd->prepare("INSERT INTO video (datecr, titre, lien, descr) VALUES (:datecr, :titre, :lien, :descr)");
+		$req = $bdd->prepare("INSERT INTO carnet (datecr, titre, contenu, descr,type) VALUES (:datecr, :titre, :lien, :descr, :type)");
 		$req->execute(array(
 			'datecr' => $date,
 			'titre' => $nom,
 			'lien' => $lien,
-			'descr' => $descr
+			'descr' => $descr,
+			'type' => "video"
 		));
 	}
 	echo "<div class=\"notification is-success\"><button class=\"delete\"></button><strong>Ca a marché!</strong><span class=\"black\">Vidéo chargé</span></div><a type=\"button\" class=\"button is-info\" href=\"index.php\">Retour menu</a>";
