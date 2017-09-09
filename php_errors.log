@@ -12,3 +12,7 @@
 [08-Sep-2017 10:48:19 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/ubuntu/workspace/modif/deletemessage.php on line 11
 [08-Sep-2017 10:48:19 UTC] PHP Stack trace:
 [08-Sep-2017 10:48:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/modif/deletemessage.php:0
+[09-Sep-2017 20:46:05 UTC] PHP Warning:  getimagesize(../img/1.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/modif/addphoto.php on line 38
+[09-Sep-2017 20:46:05 UTC] PHP Stack trace:
+[09-Sep-2017 20:46:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/modif/addphoto.php:0
+[09-Sep-2017 20:46:05 UTC] PHP   2. getimagesize() /home/ubuntu/workspace/modif/addphoto.php:38

@@ -1,20 +1,32 @@
 <?php
 include("head.php");
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-	$cim = test_input($_POST["cim"]);
-	$alt = test_input($_POST["alt"]);
-	$desc = nl2br(test_input($_POST["desc"]));
-	$cat = test_input($_POST["cat"]);
-	/*Recherche du dernier nom disponible*/
-	$reponse = $bdd->query("SELECT * FROM image ORDER BY id DESC");
+	$titre = test_input($_POST["titre"]);
+	$date = test_input($_POST["date"]);
+	$descr = nl2br(test_input($_POST["descr"]));
+	/*Insertion dans le carnet*/
+  $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	$req = $bdd->prepare("INSERT INTO carnet (datecr, titre, type, descr) VALUES (:datecr, :titre, :type, :descr)");
+	$req->execute(array(
+		'datecr' => $date,
+		'titre' => $titre,
+		'type' => "photo",
+		'descr' => $descr
+	));
+	/*Recherche du dernier id dans le carnet*/
+	$reponse = $bdd->query("SELECT * FROM carnet ORDER BY id DESC");
 	$donnees = $reponse->fetch();
-	$id = $donnees['id']+1;
+	$id_carnet = $donnees['id'];
+	/*Recherche du dernier nom disponible*/
+	$reponse = $bdd->query("SELECT * FROM photo ORDER BY id DESC");
+	$donnees = $reponse->fetch();
+	$id_photo = $donnees['id']+1;
 	$nom_fichier = $donnees['id']+1 .".".strtolower(substr(strrchr($_FILES['photo']['name'],'.'),1));
 	$reponse->closeCursor();
 	/*Upload et redimentionnemnt des images sur les serveur*/
 	$upload1 = upload('photo','../img/'.$nom_fichier,FALSE, array('png','jpg','jpeg','JPG','JPEG','PNG') );
-	$upload2 = upload('photo2','../img/m_'.$nom_fichier,FALSE, array('png','jpg','jpeg','JPG','JPEG','PNG') );
-	if ($upload1 && $upload2) $msg = "<div class=\"alert alert-success\"><strong>Sikerült!</strong> Sikeres volt a kép feltöltés</div><a type=\"button\" class=\"btn btn-info\" href=\"index.php\">Vissza a főmenühöz</a>";
+//	$upload2 = upload('photo2','../img/m_'.$nom_fichier,FALSE, array('png','jpg','jpeg','JPG','JPEG','PNG') );
+	if ($upload1 /*&& $upload2*/) $msg = "<div class=\"alert alert-success\"><strong>Ca a marché! </strong> Imagge publié</div><a type=\"button\" class=\"btn btn-info\" href=\"index.php\">Retour au menu</a>";
 	else $msg = "<div class=\"alert alert-danger\">Echèc de l'upload de l'image</div>";
 //	echo $msg;
  //redimentionnement
@@ -25,16 +37,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	/*Récupérer la hauteur et la largeur*/
 	list($width, $height, $type, $attr) = getimagesize('../img/'.$nom_fichier);
 	$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$req = $bdd->prepare("INSERT INTO image (id, nom, cat, largeur, hauteur, cim, alt, descr) VALUES (:id, :nom, :cat, :largeur, :hauteur, :cim, :alt, :descr)");
+	$req = $bdd->prepare("INSERT INTO photo (id_carnet, nom, largeur, hauteur, descr) VALUES (:id, :nom, :largeur, :hauteur, :descr)");
 	$req->execute(array(
-	'id' => $id,
+	  'id' => $id_carnet,
     'nom' => $nom_fichier,
     'largeur' => $width,
     'hauteur' => $height,
-    'cim' => $cim,
-    'alt' => $alt,
-	'descr' => $desc,
-	'cat' => $cat
+	  'descr' => $desc
     ));
 }
 
@@ -55,29 +64,28 @@ function upload($index,$destination,$maxsize=FALSE,$extensions=FALSE)
 
 <h1 class="text-center">Ajouter des photos</h1>
 
-  <form role="form" action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" accept-charset="UTF-8">
-    <div class="field">
-      <label class="label">Titre</label>
-      <p class="control">
-        <input class="input is-info" type="text" placeholder="Titre du message" name="titre">
-      </p>
-    </div>
+  <form role="form" action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="titre">Titre</label>
+    <input type="text" class="form-control" id="titre" name="titre">
+  </div>
     
-    <div class="field">
-      <label class="label">Description</label>
-      <p class="control">
-        <textarea class="textarea is-info" placeholder="Contenu du message" name="descr"></textarea>
-      </p>
-    </div>
-    
-    <div class="field">
-      <label class="label">Date</label>
-      <p class="control">
-        <input class="input is-info" placeholder="Date" name="date" id="datepicker"></textarea>
-      </p>
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" required name="photo">
     </div>
   
-  <button type="submit" class="button is-info" name="add" value="had">Ajouter</button>
+    <div class="form-group">
+     <label for="comment">Description</label>
+      <textarea class="form-control" rows="5" id="comment" name="descr"></textarea>
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Date</label>
+        <input class="input is-info" placeholder="Date" name="date" id="datepicker" type="text" required></input>
+    </div>
+  
+  <button type="submit" class="btn btn-default" name="add" value="had">Ajouter</button>
 </form>
 <br/><br/>
 
@@ -89,6 +97,13 @@ function upload($index,$destination,$maxsize=FALSE,$extensions=FALSE)
     $('#lien').change(function(){
       
       $('#lien').val($.base64Encode($('#lien').val()));
+    });
+  	
+  	$("#input-id").fileinput({
+    	uploadLabel: "",
+    	removeLabel: "Effacer",
+    	browseLabel: "Chaner l'image",
+    	uploadClass: "display-none"
     });
   	
   });

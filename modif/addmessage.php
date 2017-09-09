@@ -18,18 +18,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <h1 class="text-center">Ajouter un message</h1>
 
   <form role="form" action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" accept-charset="UTF-8">
-    <div class="field">
-      <label class="label">Titre</label>
-      <p class="control">
-        <input class="input is-info" type="text" placeholder="Titre du message" name="titre">
-      </p>
-    </div>
+    <div class="form-group">
+      <label for="titre">Titre</label>
+      <input type="text" class="form-control" id="titre" name="titre">
+  </div>
     
-    <div class="field">
-      <label class="label">Description</label>
-      <p class="control">
-        <textarea class="textarea is-info" placeholder="Contenu du message" name="descr"></textarea>
-      </p>
+    <div class="form-group">
+     <label for="comment">Description</label>
+      <textarea class="form-control" rows="5" id="comment" name="descr"></textarea>
     </div>
     
     <div class="field">
@@ -39,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </p>
     </div>
   
-  <button type="submit" class="button is-info" name="add" value="had">Ajouter</button>
+  <button type="submit" class="btn btn-default" name="add" value="had">Ajouter</button>
 </form>
 <br/><br/>
 

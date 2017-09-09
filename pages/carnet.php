@@ -15,12 +15,24 @@
 
 <?php
 include('connect.php');
-$reponse = $bdd->query('SELECT * FROM video ORDER BY datecr DESC');
+$reponse = $bdd->query('SELECT * FROM carnet ORDER BY datecr DESC');
 while ($donnees = $reponse->fetch()){
+	if ($donnees['type'] == "video"){
 		echo "<h3 class=\"margin_bottom_20\">".$donnees['titre']."</h3>\n";
 		echo "<div class=\"videoWrapper margin_bottom_20\">".$donnees['lien']."</div>";
 		echo "\n<p class=\"text_right\">".$donnees['datecr']."</p><hr/>\n";
 		echo "\n<p>".$donnees['descr']."</p>\n";
+	}
+	else if($donnees['type'] == "photo"){
+		echo "<h3 class=\"margin_bottom_20\">".$donnees['titre']."</h3>\n";
+		echo "\n<p class=\"text_right\">".$donnees['datecr']."</p><hr/>\n";
+		echo "\n<p>".$donnees['descr']."</p>\n";
+	}
+	else{
+		echo "<h3 class=\"margin_bottom_20\">".$donnees['titre']."</h3>\n";
+		echo "\n<p class=\"text_right\">".$donnees['datecr']."</p><hr/>\n";
+		echo "\n<p>".$donnees['descr']."</p>\n";
+	}
 }
 ?>
 
