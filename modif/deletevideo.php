@@ -26,9 +26,12 @@ while ($donnees = $reponse->fetch()){
 ?>	
 	<div>
 		<input type="checkbox" name="id_<?php echo $donnees['id']?>" value="<?php echo $donnees['id']?>">
-		<p><span class="subtitle"><?php echo $donnees['titre']?></span><br/><?php echo $donnees['descr']?></p>
+		<div class="delete_message_p"><h3><?php echo $donnees['titre']?></h3>
+		<?php echo $donnees['descr']?>
+		
     <?php        echo "<div class=\"videoWrapper margin_bottom_20\">".$donnees['contenu']."</div>";
 ?>	
+		</div>
 	</div>
 <?php		
 }

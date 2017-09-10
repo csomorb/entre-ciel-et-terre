@@ -23,7 +23,10 @@ while ($donnees = $reponse->fetch()){
 ?>	
 	<div>
 		<input type="checkbox" name="id_<?php echo $donnees['id']?>" value="<?php echo $donnees['id']?>">
-		<p class="delete_message_p"><span class="subtitle"><?php echo $donnees['titre']?></span><br/><?php echo $donnees['descr']?></p>
+		<div class="delete_message_p">
+			<h3><?php echo $donnees['titre']?></h3>
+			<?php echo $donnees['descr']?>
+		</div>
 	</div>
 <?php		
 }
@@ -31,7 +34,7 @@ $reponse->closeCursor();
 ?>
 <br/>
 <br/>
-<button type="submit" class="button is-danger">Supprimer le message</button>
+<button type="submit" class="btn btn-danger">Supprimer le message</button>
 </form>
 <br/>
 

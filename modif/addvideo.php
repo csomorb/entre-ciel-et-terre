@@ -21,25 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <h1 class="title">Ajouter une vidéo</h1>
   <form role="form" action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" accept-charset="UTF-8">
-    <div class="field">
-      <label class="label">Nom de la vidéo</label>
-      <p class="control">
-        <input class="input is-info" type="text" placeholder="Entrer un nom pour la vidéo" name="nom">
-      </p>
-    </div>
+    <div class="form-group">
+      <label for="titre">Titre</label>
+      <input type="text" class="form-control" id="titre" name="nom">
+  </div>
     
-    <div class="field">
-      <label class="label">Lien Youtube</label>
-      <p class="control">
-        <input class="input is-info" type="text" placeholder="Youtube -> Partager / Share-> Intégrer / Embed" name="lien" id="lien">
-      </p>
-    </div>
+    <div class="form-group">
+      <label for="titre">Lien Youtube</label>
+      <input type="text" class="form-control" placeholder="Youtube -> Partager / Share-> Intégrer / Embed" name="lien" id="lien">
+  </div>
     
-    <div class="field">
-      <label class="label">Description</label>
-      <p class="control">
-        <textarea class="textarea is-info" placeholder="Description de la vidéo" name="descr"></textarea>
-      </p>
+    <div class="form-group">
+     <label for="comment">Description</label>
+      <textarea class="form-control" rows="5" id="comment" name="descr"></textarea>
     </div>
     
     <div class="field">
@@ -49,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       </p>
     </div>
   
-  <button type="submit" class="button is-info" name="add" value="had">Ajouter</button>
+  <button type="submit" class="btn btn-default" name="add" value="had">Ajouter</button>
 </form>
 <br/><br/>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
