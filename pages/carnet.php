@@ -30,6 +30,7 @@ while ($donnees = $reponse->fetch()){
 	}
 	else if($donnees['type'] == "photo"){
 		echo "<h3 class=\"margin_bottom_20 subtitle center\">".$donnees['titre']."</h3>\n";
+		echo "\n<p>".$donnees['descr']."</p>\n";
 		$reponse2 = $bdd->query('SELECT * FROM photo WHERE id_carnet =  '.$donnees['id'].' ORDER BY id');
 		$galleri = "<div class=\"my-gallery\" itemscope itemtype=\"http://schema.org/ImageGallery\">\n";
 		while ($donnees2 = $reponse2->fetch()){
@@ -42,7 +43,7 @@ while ($donnees = $reponse->fetch()){
 		}
 		$galleri.= "</div>";
 		echo $galleri;
-		echo "\n<p>".$donnees['descr']."</p>\n";
+		
 		echo "\n<p class=\"text_right\">".$donnees['datecr']."</p><hr/>\n";
 	}
 	else{

@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$date = test_input($_POST["date"]);
 	$descr = nl2br(test_input($_POST["descr"]));
 	/*Insertion dans le carnet*/
-  $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$req = $bdd->prepare("INSERT INTO carnet (datecr, titre, type, descr) VALUES (:datecr, :titre, :type, :descr)");
 	$req->execute(array(
 		'datecr' => $date,
@@ -24,7 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$reponse->closeCursor();
 	
 	for ($i = 1; $i < 9 ; $i++){
-	    echo strlen($_FILES['photo_'.$i]['name']);
 	    if (strlen($_FILES['photo_'.$i]['name']) > 0 ){
     	    $nom_fichier =  $id_photo.".".strtolower(substr(strrchr($_FILES['photo_'.$i]['name'],'.'),1));
     	    $upload1 = upload('photo_'.$i,'../img/'.$nom_fichier,FALSE, array('png','jpg','jpeg','JPG','JPEG','PNG') );
@@ -43,6 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ));
 	    }
 	    $id_photo++;
+	}
 }
 
 function upload($index,$destination,$maxsize=FALSE,$extensions=FALSE)
@@ -155,12 +155,12 @@ function upload($index,$destination,$maxsize=FALSE,$extensions=FALSE)
     
     <div class="form-group">
       <label for="input-id">Image</label>
-      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text"  name="photo">
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text"  name="photo_9">
     </div>
     
     <div class="form-group">
      <label for="comment">Description de l'image</label>
-      <textarea class="form-control" rows="3" id="comment" name="descr"></textarea>
+      <textarea class="form-control" rows="3" id="comment" name="descr_9"></textarea>
     </div>
     
     <div class="form-group">
