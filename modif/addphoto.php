@@ -21,30 +21,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$reponse = $bdd->query("SELECT * FROM photo ORDER BY id DESC");
 	$donnees = $reponse->fetch();
 	$id_photo = $donnees['id']+1;
-	$nom_fichier = $donnees['id']+1 .".".strtolower(substr(strrchr($_FILES['photo']['name'],'.'),1));
 	$reponse->closeCursor();
-	/*Upload et redimentionnemnt des images sur les serveur*/
-	$upload1 = upload('photo','../img/'.$nom_fichier,FALSE, array('png','jpg','jpeg','JPG','JPEG','PNG') );
-//	$upload2 = upload('photo2','../img/m_'.$nom_fichier,FALSE, array('png','jpg','jpeg','JPG','JPEG','PNG') );
-	if ($upload1 /*&& $upload2*/) $msg = "<div class=\"alert alert-success\"><strong>Ca a marché! </strong> Imagge publié</div><a type=\"button\" class=\"btn btn-info\" href=\"index.php\">Retour au menu</a>";
-	else $msg = "<div class=\"alert alert-danger\">Echèc de l'upload de l'image</div>";
-//	echo $msg;
- //redimentionnement
-// ini_set("display_errors",true);
-//	if (!fct_redim_image(1200,0,'','','../img/',$nom_fichier)) $msg.=""; //échec du redimentionnement 1200
-//	if (!fct_redim_image(250,0,'','m_'.$nom_fichier,'../img/',$nom_fichier)) $msg.=" echec du redimentionnement de l'image pour le 250";
-	echo $msg;
-	/*Récupérer la hauteur et la largeur*/
-	list($width, $height, $type, $attr) = getimagesize('../img/'.$nom_fichier);
-	$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	$req = $bdd->prepare("INSERT INTO photo (id_carnet, nom, largeur, hauteur, descr) VALUES (:id, :nom, :largeur, :hauteur, :descr)");
-	$req->execute(array(
-	  'id' => $id_carnet,
-    'nom' => $nom_fichier,
-    'largeur' => $width,
-    'hauteur' => $height,
-	  'descr' => $desc
-    ));
+	
+	for ($i = 1; $i < 9 ; $i++){
+	    echo strlen($_FILES['photo_'.$i]['name']);
+	    if (strlen($_FILES['photo_'.$i]['name']) > 0 ){
+    	    $nom_fichier =  $id_photo.".".strtolower(substr(strrchr($_FILES['photo_'.$i]['name'],'.'),1));
+    	    $upload1 = upload('photo_'.$i,'../img/'.$nom_fichier,FALSE, array('png','jpg','jpeg','JPG','JPEG','PNG') );
+    	    if ($upload1) $msg = "<div class=\"alert alert-success\"><strong>Ca a marché! </strong> Imagge publié</div><a type=\"button\" class=\"btn btn-info\" href=\"index.php\">Retour au menu</a>";
+    	    else $msg = "<div class=\"alert alert-danger\">Echèc de l'upload de l'image</div>";
+    	    echo $msg;
+    	    $descr_photo = nl2br(test_input($_POST["descr_".$i]));
+    	    list($width, $height, $type, $attr) = getimagesize('../img/'.$nom_fichier);
+        	$req = $bdd->prepare("INSERT INTO photo (id_carnet, nom, largeur, hauteur, descr) VALUES (:id, :nom, :largeur, :hauteur, :descr)");
+        	$req->execute(array(
+        	    'id' => $id_carnet,
+                'nom' => $nom_fichier,
+                'largeur' => $width,
+                'hauteur' => $height,
+        	    'descr' => $descr_photo
+            ));
+	    }
+	    $id_photo++;
 }
 
 function upload($index,$destination,$maxsize=FALSE,$extensions=FALSE)
@@ -66,18 +64,103 @@ function upload($index,$destination,$maxsize=FALSE,$extensions=FALSE)
 
   <form role="form" action="<?php echo $_SERVER["PHP_SELF"];?>" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
   <div class="form-group">
-    <label for="titre">Titre</label>
+    <label for="titre">Titre de l'album</label>
     <input type="text" class="form-control" id="titre" name="titre">
   </div>
+  
+    <div class="form-group">
+     <label for="comment">Description de l'album</label>
+      <textarea class="form-control" rows="5" id="comment" name="descr"></textarea>
+    </div>
     
     <div class="form-group">
       <label for="input-id">Image</label>
-      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" required name="photo">
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" name="photo_1">
     </div>
-  
+    
     <div class="form-group">
-     <label for="comment">Description</label>
-      <textarea class="form-control" rows="5" id="comment" name="descr"></textarea>
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="3" id="comment" name="descr_1"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" name="photo_2">
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="3" id="comment" name="descr_2"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" name="photo_3">
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="3" id="comment" name="descr_3"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" name="photo_4">
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="3" id="comment" name="descr_4"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" name="photo_5">
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="5" id="comment" name="descr_5"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" name="photo_6">
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="3" id="comment" name="descr_6"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" name="photo_7">
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="3" id="comment" name="descr_7"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text" name="photo_8">
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="3" id="comment" name="descr_8"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="input-id">Image</label>
+      <input id="input-id" type="file" class="file" accept="image/*" data-preview-file-type="text"  name="photo">
+    </div>
+    
+    <div class="form-group">
+     <label for="comment">Description de l'image</label>
+      <textarea class="form-control" rows="3" id="comment" name="descr"></textarea>
     </div>
     
     <div class="form-group">

@@ -254,3 +254,39 @@ a#next:hover {
     margin-left: 25px;
     margin-top: -45px;
 }
+
+.del_image{
+  width:150px;
+  height: auto;
+}
+
+.text_right{
+  text-align: right;
+}
+
+.thumb_photo{
+    height: auto;
+    max-width: 350px;
+}
+
+.my-gallery{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.center{
+    text-align: center;
+}
+
+.video_center{
+    display: flex;
+    justify-content: center;
+}
+
+.de_ph{
+    display: flex;
+    justify-content: space-around;
+}

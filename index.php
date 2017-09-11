@@ -16,6 +16,13 @@ $page = "pages/" . $params . ".php";
     <title>Entre ciel et terre</title>
     <link rel="stylesheet" href="css/bulma.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/photoswipe.css"> 
+	<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+		 In the folder of skin CSS file there are also:
+		 - .png and .svg icons sprite, 
+		 - preloader.gif (for browsers that do not support CSS animations) -->
+	<link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+	<!-- Core JS file -->
     <?php /*if ($folder == "hobbies") { echo "<link rel='stylesheet' href='css/photoswipe.css' type='text/css'>"; }*/ ?>
     <meta name="description" content=" Entre la france et l'Inde Entre nos selles de vélo et des rencontres">
     <meta name="keywords" content="Augustin,Théophile,Rigal,fraternité,irak,Vélo,chrétien,entre,ciel,terre,aventure">
