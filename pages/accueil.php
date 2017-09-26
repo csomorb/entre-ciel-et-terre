@@ -22,7 +22,8 @@
       <p class="title center">Nous nous engageaons auprès de</p>
       <a href="esperancebanlieu">Espérance Banlieue </a> <br/>
       <a href="fraterniteenirak">Fraternité en Irak </a> <br/>
-      <a href="soeurdelacharite">Soeur de la Charité </a>
+      <a href="soeurdelacharite">Soeur de la Charité </a> <br/>
+       <a href="frerejaccard">Les frères Jaccard</a>
     </div>
     <div class="tile is-child box carre_accueil">
       <p class="title center"><a href="/contact">Contact</a></p>
@@ -43,6 +44,33 @@
  <div class="tile is-parent">
     <div class="tile is-child box carre_accueil">
       <p class="title center"><a href="carnet">Carnet de voyage</a></p>
+            <?php
+      include('connect.php');
+      $reponse = $bdd->query('SELECT * FROM carnet ORDER BY datecr DESC');
+      $donnees = $reponse->fetch();
+      echo "<h3 class=\"margin_bottom_20 subtitle center\">".$donnees['titre']."</h3>\n";
+      if ($donnees['type'] == "video"){
+		    echo "<div class=\"video_center\"><div class=\"videoWrapper margin_bottom_20\">".$donnees['contenu']."</div></div>";
+	    }
+	    else if($donnees['type'] == "photo"){
+  		$reponse2 = $bdd->query('SELECT * FROM photo WHERE id_carnet =  '.$donnees['id'].' ORDER BY id');
+  		$galleri = "<div class=\"my-gallery\" itemscope itemtype=\"http://schema.org/ImageGallery\">\n";
+      $donnees2 = $reponse2->fetch();
+  			$galleri.= "\t<figure itemprop=\"associatedMedia\" itemscope itemtype=\"http://schema.org/ImageObject\">\n";
+  			$galleri.= "\t\t<a href=\"/img/".$donnees2['nom']."\" itemprop=\"contentUrl\" data-size=\"".$donnees2['largeur']."x".$donnees2['hauteur']."\">\n";
+  			$galleri.= "\t\t\t<img src=\"/img/".$donnees2['nom']."\" itemprop=\"thumbnail\" alt=\"photo\" class=\"thumb_photo\"/>\n";
+  			$galleri.= "\t\t</a>\n\t\t<figcaption itemprop=\"caption description\">".$donnees2['descr']."</figcaption>\n"; /**Description***/
+  		//	$galleri.= "\t\t<p class=\"text-center\"><span class=\"lead\">".$donnees2['descr']."</p>\n"; /**Description***/
+  			$galleri.= "\t</figure>\n";
+  		$galleri.= "</div>";
+  		echo $galleri;
+	  }
+	  else{
+	    	echo "\n<p>".$donnees['descr']."</p>";
+	  }
+  ?>
+      
+     
     </div>
   </div>
 </div>
@@ -201,3 +229,74 @@ function rotate() {
     $('#next').click();
 }
 </script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  <script src="../js/photoswipe.min.js"></script> 
+	<!-- UI JS file -->
+	<script src="../js/photoswipe-ui-default.min.js"></script>
+   <script src="../js/album.js"></script>

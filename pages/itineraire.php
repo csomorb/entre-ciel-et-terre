@@ -109,9 +109,6 @@
       });
 
       var styles2 = {
-        'Point': new ol.style.Style({
-          image: image
-        }),
         'LineString': new ol.style.Style({
           stroke: new ol.style.Stroke({
             color: 'green',
@@ -120,7 +117,7 @@
         }),
         'MultiLineString': new ol.style.Style({
           stroke: new ol.style.Stroke({
-            color: 'green',
+            color: 'blue',
             width: 1
           })
         }),
@@ -162,20 +159,13 @@
             })
           })
         }),
-        'Circle': new ol.style.Style({
-          stroke: new ol.style.Stroke({
-            color: 'red',
-            width: 2
-          }),
-          fill: new ol.style.Fill({
-            color: 'rgba(255,0,0,0.2)'
-          })
-        })
       };
 
       var styleFunction = function(feature) {
         return styles2[feature.getGeometry().getType()];
       };
+
+var geojsonObject2 = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"type":"LineString","coordinates":[[6.52587890625,49.89463439573421],[9.4921875,47.62097541515849],[11.18408203125,47.746711194756]]}}]}
 
       var geojsonObject = {
         'type': 'FeatureCollection',
@@ -185,71 +175,65 @@
             'name': 'EPSG:3857'
           }
         },
-        'features': [{
+        'features': [ {
           'type': 'Feature',
           'geometry': {
-            'type': 'Point',
-            'coordinates': [0, 0]
+            'type': 'LineString',
+            'coordinates': [[
+            6.52587890625,
+            49.89463439573421
+          ],
+          [
+            9.4921875,
+            47.62097541515849
+          ],
+          [
+            11.18408203125,
+            47.746711194756
+          ]
+        ]
           }
         }, {
           'type': 'Feature',
           'geometry': {
             'type': 'LineString',
-            'coordinates': [[4e6, -2e6], [8e6, 2e6]]
-          }
-        }, {
-          'type': 'Feature',
-          'geometry': {
-            'type': 'LineString',
-            'coordinates': [[4e6, 2e6], [8e6, -2e6]]
+            'coordinates': [[6.52587890625,
+            49.89463439573421], [9.4921875,
+            47.62097541515849]]
           }
         }, {
           'type': 'Feature',
           'geometry': {
             'type': 'Polygon',
-            'coordinates': [[[-5e6, -1e6], [-4e6, 1e6], [-3e6, -1e6]]]
+            'coordinates': [[[9.4921875,
+            47.62097541515849], [9.4921875,
+            47.62097541515849], [9.4921875,
+            47.62097541515849]]]
           }
         }, {
           'type': 'Feature',
           'geometry': {
             'type': 'MultiLineString',
             'coordinates': [
-              [[-1e6, -7.5e5], [-1e6, 7.5e5]],
-              [[1e6, -7.5e5], [1e6, 7.5e5]],
-              [[-7.5e5, -1e6], [7.5e5, -1e6]],
-              [[-7.5e5, 1e6], [7.5e5, 1e6]]
+              [[9.4921875,
+            47.62097541515849], [ 9.4921875,
+            47.62097541515849]],
+              [[9.4921875,
+            47.62097541515849], [9.4921875,
+            47.62097541515849]],
+              [[9.4921875,
+            47.62097541515849], [9.4921875,
+            47.62097541515849]],
+              [[9.4921875,
+            47.62097541515849], [9.4921875,
+            47.62097541515849]]
             ]
-          }
-        }, {
-          'type': 'Feature',
-          'geometry': {
-            'type': 'MultiPolygon',
-            'coordinates': [
-              [[[-5e6, 6e6], [-5e6, 8e6], [-3e6, 8e6], [-3e6, 6e6]]],
-              [[[-2e6, 6e6], [-2e6, 8e6], [0, 8e6], [0, 6e6]]],
-              [[[1e6, 6e6], [1e6, 8e6], [3e6, 8e6], [3e6, 6e6]]]
-            ]
-          }
-        }, {
-          'type': 'Feature',
-          'geometry': {
-            'type': 'GeometryCollection',
-            'geometries': [{
-              'type': 'LineString',
-              'coordinates': [[-5e6, -5e6], [0, -5e6]]
-            }, {
-              'type': 'Point',
-              'coordinates': [4e6, -5e6]
-            }, {
-              'type': 'Polygon',
-              'coordinates': [[[1e6, -6e6], [2e6, -4e6], [3e6, -6e6]]]
-            }]
           }
         }]
       };
 
       var vectorSource2 = new ol.source.Vector({
-        features: (new ol.format.GeoJSON()).readFeatures(geojsonObject)
+        features: (new ol.format.GeoJSON()).readFeatures(geojsonObject2)
       });
 
       vectorSource2.addFeature(new ol.Feature(new ol.geom.Circle([5e6, 7e6], 1e6)));
