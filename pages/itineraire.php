@@ -66,25 +66,31 @@
       }));
       
       var li = new ol.Feature({
-        geometry: new ol.geom.LineString( [4e6, 2e6], [8e6, -2e6] ), 
+        geometry: new ol.geom.LineString([ol.proj.fromLonLat([3.061546,50.627849]),
+                                          ol.proj.fromLonLat([7.799905,48.573731]),
+                                          ol.proj.fromLonLat([12.694730,47.074390]),
+                                          ol.proj.fromLonLat([13.833917,46.380056]),
+                                          ol.proj.fromLonLat([28.995868,41.003262]),
+                                          ol.proj.fromLonLat([30.876929,37.070848]),
+                                          ol.proj.fromLonLat([43.088527,37.476644]),
+                                          ol.proj.fromLonLat([44.012660,36.205827]),
+                                          ol.proj.fromLonLat([44.194631,40.523151]),
+                                          ol.proj.fromLonLat([52.109894,35.956050]),
+                                          ol.proj.fromLonLat([58.947251,36.063031]),
+                                          ol.proj.fromLonLat([71.317103,44.073296]),
+                                          
+                                          ol.proj.fromLonLat([ 85.561946,30.671147]),
+                                          ol.proj.fromLonLat([88.388484,22.583163])]
+                                          )
       });
       
       li.setStyle(new ol.style.Style({
         stroke: new ol.style.Stroke({
-            color: 'green',
-            width: 2
-          }),
-           fill: new ol.style.Fill({
-            color: 'rgba(255,0,0,0.2)'
+            color: 'blue',
+            width: 1
           })
       }));
-      
-      console.log(li);
-      
-      var points = new Array(
-         new ol.geom.Point(50.614776, 3.099053),
-         new ol.geom.Point(48.638891, 7.776830)
-      );
+
 
       var vectorSource = new ol.source.Vector({
         features: [glosgok, ara, dama,tri,li]
@@ -97,153 +103,7 @@
       var carteLayer = new ol.layer.Tile({
             source: new ol.source.OSM()
       });
-      
-   //   var lineLayer = new ol.layer.Vector("Line Layer"); 
-   
-   /**********************************************/
-   
-   var image = new ol.style.Circle({
-        radius: 5,
-        fill: null,
-        stroke: new ol.style.Stroke({color: 'red', width: 1})
-      });
-
-      var styles2 = {
-        'LineString': new ol.style.Style({
-          stroke: new ol.style.Stroke({
-            color: 'green',
-            width: 1
-          })
-        }),
-        'MultiLineString': new ol.style.Style({
-          stroke: new ol.style.Stroke({
-            color: 'blue',
-            width: 1
-          })
-        }),
-        'MultiPoint': new ol.style.Style({
-          image: image
-        }),
-        'MultiPolygon': new ol.style.Style({
-          stroke: new ol.style.Stroke({
-            color: 'yellow',
-            width: 1
-          }),
-          fill: new ol.style.Fill({
-            color: 'rgba(255, 255, 0, 0.1)'
-          })
-        }),
-        'Polygon': new ol.style.Style({
-          stroke: new ol.style.Stroke({
-            color: 'blue',
-            lineDash: [4],
-            width: 3
-          }),
-          fill: new ol.style.Fill({
-            color: 'rgba(0, 0, 255, 0.1)'
-          })
-        }),
-        'GeometryCollection': new ol.style.Style({
-          stroke: new ol.style.Stroke({
-            color: 'magenta',
-            width: 2
-          }),
-          fill: new ol.style.Fill({
-            color: 'magenta'
-          }),
-          image: new ol.style.Circle({
-            radius: 10,
-            fill: null,
-            stroke: new ol.style.Stroke({
-              color: 'magenta'
-            })
-          })
-        }),
-      };
-
-      var styleFunction = function(feature) {
-        return styles2[feature.getGeometry().getType()];
-      };
-
-var geojsonObject2 = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"type":"LineString","coordinates":[[6.52587890625,49.89463439573421],[9.4921875,47.62097541515849],[11.18408203125,47.746711194756]]}}]}
-
-      var geojsonObject = {
-        'type': 'FeatureCollection',
-        'crs': {
-          'type': 'name',
-          'properties': {
-            'name': 'EPSG:3857'
-          }
-        },
-        'features': [ {
-          'type': 'Feature',
-          'geometry': {
-            'type': 'LineString',
-            'coordinates': [[
-            6.52587890625,
-            49.89463439573421
-          ],
-          [
-            9.4921875,
-            47.62097541515849
-          ],
-          [
-            11.18408203125,
-            47.746711194756
-          ]
-        ]
-          }
-        }, {
-          'type': 'Feature',
-          'geometry': {
-            'type': 'LineString',
-            'coordinates': [[6.52587890625,
-            49.89463439573421], [9.4921875,
-            47.62097541515849]]
-          }
-        }, {
-          'type': 'Feature',
-          'geometry': {
-            'type': 'Polygon',
-            'coordinates': [[[9.4921875,
-            47.62097541515849], [9.4921875,
-            47.62097541515849], [9.4921875,
-            47.62097541515849]]]
-          }
-        }, {
-          'type': 'Feature',
-          'geometry': {
-            'type': 'MultiLineString',
-            'coordinates': [
-              [[9.4921875,
-            47.62097541515849], [ 9.4921875,
-            47.62097541515849]],
-              [[9.4921875,
-            47.62097541515849], [9.4921875,
-            47.62097541515849]],
-              [[9.4921875,
-            47.62097541515849], [9.4921875,
-            47.62097541515849]],
-              [[9.4921875,
-            47.62097541515849], [9.4921875,
-            47.62097541515849]]
-            ]
-          }
-        }]
-      };
-
-      var vectorSource2 = new ol.source.Vector({
-        features: (new ol.format.GeoJSON()).readFeatures(geojsonObject2)
-      });
-
-      vectorSource2.addFeature(new ol.Feature(new ol.geom.Circle([5e6, 7e6], 1e6)));
-
-      var vectorLayer2 = new ol.layer.Vector({
-        source: vectorSource2,
-        style: styleFunction
-      });
-
-
+  
 
 
 /********************************************/
@@ -254,7 +114,7 @@ var geojsonObject2 = {"type":"FeatureCollection","features":[{"type":"Feature","
     
       var map = new ol.Map({
         target: 'map',
-        layers: [carteLayer,vectorLayer, vectorLayer2 ],
+        layers: [carteLayer,vectorLayer],
         controls: ol.control.defaults({
           attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
             collapsible: false
