@@ -65,10 +65,47 @@
         }))
       }));
       
+       var style2 = {
+        'Point': new ol.style.Style({
+          image: new ol.style.Circle({
+            fill: new ol.style.Fill({
+              color: 'rgba(255,255,0,0.4)'
+            }),
+            radius: 1,
+            stroke: new ol.style.Stroke({
+              color: '#ff0',
+              width: 1
+            })
+          })
+        }),
+        'LineString': new ol.style.Style({
+          stroke: new ol.style.Stroke({
+            color: '#286d13',
+            width: 3
+          })
+        }),
+        'MultiLineString': new ol.style.Style({
+          stroke: new ol.style.Stroke({
+            color: '#286d13',
+            width: 3
+          })
+        })
+      };
+      
+      var vectord = new ol.layer.Vector({
+        source: new ol.source.Vector({
+          url: './pages/day.gpx',
+          format: new ol.format.GPX()
+        }),
+        style: function(feature) {
+          return style2[feature.getGeometry().getType()];
+        }
+      });
+      
       var li = new ol.Feature({
-        geometry: new ol.geom.LineString([ol.proj.fromLonLat([3.061546,50.627849]),
-                                          ol.proj.fromLonLat([7.799905,48.573731]),
-                                          ol.proj.fromLonLat([12.694730,47.074390]),
+        geometry: new ol.geom.LineString([
+   
+                                          ol.proj.fromLonLat([12.76272,46.82767]),
                                           ol.proj.fromLonLat([13.833917,46.380056]),
                                           ol.proj.fromLonLat([28.995868,41.003262]),
                                           ol.proj.fromLonLat([30.876929,37.070848]),
@@ -114,7 +151,7 @@
     
       var map = new ol.Map({
         target: 'map',
-        layers: [carteLayer,vectorLayer],
+        layers: [carteLayer,vectorLayer, vectord],
         controls: ol.control.defaults({
           attributionOptions: /** @type {olx.control.AttributionOptions} */ ({
             collapsible: false
