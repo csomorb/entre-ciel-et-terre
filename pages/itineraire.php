@@ -10,6 +10,10 @@
                 <h2 class="subtitle has-text-centered" id="ss-titre">itinéraire</h2>
             </div>
         </div>
+        <div class="legend-color">
+          <span style="color:blue;">Chemin parouru</span><br/>
+          <span style="color:#286d13">Chemin prévu</span>
+        </div>
     </div>
     <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
