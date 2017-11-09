@@ -54,6 +54,8 @@ while ($donnees = $reponse->fetch()){
 }
 ?>
 
+<iframe frameborder="0" width="100%" height="500" src="/pdf/01.pdf"></iframe>
+
 </div>
 <script>
 	$(function() {

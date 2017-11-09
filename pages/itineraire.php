@@ -108,9 +108,8 @@
       
       var li = new ol.Feature({
         geometry: new ol.geom.LineString([
-   
-                                          ol.proj.fromLonLat([12.76272,46.82767]),
-                                          ol.proj.fromLonLat([13.833917,46.380056]),
+                                          
+                                          ol.proj.fromLonLat([22.94442, 40.64007]),
                                           ol.proj.fromLonLat([28.995868,41.003262]),
                                           ol.proj.fromLonLat([30.876929,37.070848]),
                                           ol.proj.fromLonLat([43.088527,37.476644]),
@@ -119,7 +118,6 @@
                                           ol.proj.fromLonLat([52.109894,35.956050]),
                                           ol.proj.fromLonLat([58.947251,36.063031]),
                                           ol.proj.fromLonLat([71.317103,44.073296]),
-                                          
                                           ol.proj.fromLonLat([ 85.561946,30.671147]),
                                           ol.proj.fromLonLat([88.388484,22.583163])]
                                           )
