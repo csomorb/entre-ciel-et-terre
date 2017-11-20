@@ -17,7 +17,7 @@
         </div>
     </div>
 <div class="container">  
-
+<iframe frameborder="0" width="100%" height="500" src="/pdf/02.pdf"></iframe>
 <?php
 include('connect.php');
 $reponse = $bdd->query('SELECT * FROM carnet ORDER BY datecr DESC');
